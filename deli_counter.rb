@@ -20,6 +20,7 @@ end
 def line(lineArray)
   bigString = "The line is currently:"
    if  lineArray.length === 0
+     puts("The line is currently empty.")
     return "The line is currently empty."
   else
     i = 0 
