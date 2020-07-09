@@ -29,11 +29,10 @@ def currentLine(lineArray)
     for (let i = 0; i< lineArray.length; i++){
       if((lineArray.length - i) === 1){
          bigString = bigString.concat(" #{i + 1}. #{lineArray[i]}");
-      } else {
+       else 
 
-        bigString = bigString.concat(` ${i + 1}. ${lineArray[i]},`);
-        }
-      }
+        bigString = bigString.concat(" #{i + 1}. #{lineArray[i]},");
+
       return bigString;
     }
 end
