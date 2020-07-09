@@ -18,7 +18,7 @@ end
 
 
 def line(lineArray)
-  var bigString = "The line is currently:"
+  bigString = "The line is currently:"
    if  lineArray.length === 0
     return "The line is currently empty."
   else
