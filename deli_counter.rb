@@ -4,22 +4,22 @@ var katzDeliLine = []
 
 def takeANumber(lineArray,newName)
   lineArray.push(newName);
-  return "Welcome, #{newName}. You are number {lineArray.length} in line.`;
+  return "Welcome, #{newName}. You are number #{lineArray.length} in line."
 end
 
 def nowServing(lineArray)
   if lineArray.length === 0
     return "There is nobody waiting to be served!"
   else
-    return (`Currently serving ${lineArray.shift()}.`
+    return "Currently serving #{lineArray.shift()}."
   end
 end
 
 
 def currentLine(lineArray)
-  var bigString = "The line is currently:";
+  var bigString = "The line is currently:"
    if  lineArray.length === 0
-    return "The line is currently empty.";
+    return "The line is currently empty."
   else
     
     
