@@ -24,11 +24,9 @@ def line(lineArray)
   else
     i = 0 
     while i < lineArray.length 
-      if((lineArray.length - i) === 1)
+
          bigString = bigString.concat(" #{i + 1}. #{lineArray[i]}");
-       else 
-        bigString = bigString.concat(" #{i + 1}. #{lineArray[i]},")
-      end
+
       i += 1 
     end 
       puts(bigString)
