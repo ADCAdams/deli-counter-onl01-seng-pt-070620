@@ -2,9 +2,6 @@
 
 katz_deli = []
 
-def line(lineArray)
-  lineArray.length == 0 ? puts("The line is currently empty") : 
-end 
 
 def takeANumber(lineArray,newName)
   lineArray.push(newName);
@@ -20,19 +17,19 @@ def nowServing(lineArray)
 end
 
 
-def currentLine(lineArray)
+def line(lineArray)
   var bigString = "The line is currently:"
    if  lineArray.length === 0
     return "The line is currently empty."
   else
-    
-    for (let i = 0; i< lineArray.length; i++){
-      if((lineArray.length - i) === 1){
+    i = 0 
+    while i < lineArray.length 
+      if((lineArray.length - i) === 1)
          bigString = bigString.concat(" #{i + 1}. #{lineArray[i]}");
        else 
-
         bigString = bigString.concat(" #{i + 1}. #{lineArray[i]},");
-
+      end
+    end 
       return bigString;
-    }
+    end
 end
