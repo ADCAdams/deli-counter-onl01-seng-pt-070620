@@ -29,6 +29,7 @@ def line(lineArray)
        else 
         bigString = bigString.concat(" #{i + 1}. #{lineArray[i]},");
       end
+      i += 1 
     end 
       return bigString;
     end
