@@ -3,12 +3,12 @@
 katz_deli = []
 
 
-def takeANumber(lineArray,newName)
+def take_a_number(lineArray,newName)
   lineArray.push(newName);
   puts("Welcome, #{newName}. You are number #{lineArray.length} in line.")
 end
 
-def nowServing(lineArray)
+def now_serving(lineArray)
   if lineArray.length === 0
      puts("There is nobody waiting to be served!")
   else
